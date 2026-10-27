@@ -52,4 +52,12 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    //
+    implementation("com.squareup.okhttp3:okhttp:5.5.0")
+    implementation("com.google.code.gson:gson:2.14.0")
+    implementation("androidx.webkit:webkit:1.17.1")
+    implementation("androidx.navigation:navigation-compose:2.10.2")
+    implementation("androidx.compose.material:material-icons-core")
+    implementation("androidx.compose.material:material-icons-extended")
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
 }

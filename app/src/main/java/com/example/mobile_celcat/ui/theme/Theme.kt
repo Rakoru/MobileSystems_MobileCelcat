@@ -12,18 +12,22 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = CampusTextDark,
+    secondary = CampusText2Dark,
+    tertiary = Pink80,
+    background = BgBlack,
+    onBackground = onBgBlack
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = CampusTextLight,
+    secondary = CampusText2Light,
+    tertiary = Pink40,
+    background = BgWhite,
+    onBackground = onBgWhite
 
     /* Other default colors to override
-    background = Color(0xFFFFFBFE),
+    ,
     surface = Color(0xFFFFFBFE),
     onPrimary = Color.White,
     onSecondary = Color.White,
@@ -37,7 +41,7 @@ private val LightColorScheme = lightColorScheme(
 fun Mobile_CelcatTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
